@@ -1,0 +1,4 @@
+mysqld --install
+
+Start-Service -Name "MySQL"
+Get-Service -Name "MySQL"

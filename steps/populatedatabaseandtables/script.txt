@@ -1,0 +1,15 @@
+Write-Host "Show the existing MySL Databases."
+mysql -u {mysqlUserRoot.user} -p{mysqlUserRoot.password} -e "SHOW DATABASES;"
+
+Write-Host "================================"
+Write-Host "Create the servertribe Database."
+mysql -u {mysqlUserRoot.user} -p{mysqlUserRoot.password} -e "CREATE DATABASE servertribe;"
+
+Write-Host "================================"
+Write-Host "Create the solutions table in the servertribe database."
+mysql -u {mysqlUserRoot.user} -p{mysqlUserRoot.password} servertribe -e "CREATE TABLE solutions (name VARCHAR(20), description TEXT);"
+
+Write-Host "================================"
+Write-Host "Populate the solutions table."
+mysql -u {mysqlUserRoot.user} -p{mysqlUserRoot.password} servertribe -e "INSERT INTO solutions (name, description) VALUES ('Deployment','Attune is an agentless solution that connects to operating systems using the WinRM and ssh protocols.');"
+mysql -u {mysqlUserRoot.user} -p{mysqlUserRoot.password} servertribe -e "SELECT * FROM solutions;"

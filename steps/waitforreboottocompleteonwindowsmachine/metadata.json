@@ -1,0 +1,11 @@
+{
+    "enabled": true, 
+    "key": "waitforreboottocompleteonwindowsmachine", 
+    "minDowntime": 1, 
+    "name": "Wait for Reboot to Complete on Windows Machine", 
+    "postWait": 15, 
+    "preWait": 0, 
+    "serverKey": "mysqlnode", 
+    "tcpPort": 5986, 
+    "type": "com.servertribe.attune.tuples.StepTcpPingTuple"
+}

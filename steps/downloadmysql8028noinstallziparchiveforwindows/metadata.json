@@ -1,0 +1,14 @@
+{
+    "enabled": true, 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "downloadmysql8028noinstallziparchiveforwindows", 
+    "name": "Download MySQL 8.0.28 noinstall ZIP Archive for Windows", 
+    "osCredKey": "windowsadministratoruser", 
+    "serverKey": "mysqlnode", 
+    "successExitCode": 0, 
+    "timeout": 360, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

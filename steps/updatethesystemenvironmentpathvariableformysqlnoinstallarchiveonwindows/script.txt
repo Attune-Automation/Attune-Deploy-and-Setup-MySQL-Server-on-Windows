@@ -1,0 +1,23 @@
+$mysqlBinPath = "C:\mysql\bin\"
+$updatePathVariable = $true
+
+([System.Environment]::GetEnvironmentVariable("Path", "Machine")).split(';') | foreach-object {
+    if ($_ -like "*$mysqlBinPath*")
+    {
+        Write-Host "System Environment Path Variable already includes: " $_;
+        Write-Host "System Environment Path Variable will not be updated.";
+        $updatePathVariable = $false
+        break
+    }
+    else
+    {
+        $newPath = $newPath + $_ + ';'
+    }
+}
+
+if ($updatePathVariable)
+{
+    $newPath = $newPath + $mysqlBinPath + ';'
+    [System.Environment]::SetEnvironmentVariable("Path", $newPath, "Machine");
+    Write-Host "System Environment Path Variable has been updated to include: '$mysqlBinPath'."
+}

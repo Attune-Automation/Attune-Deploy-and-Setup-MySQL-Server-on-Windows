@@ -1,0 +1,6 @@
+{
+    "key": "mysqluserroot", 
+    "name": "MySQL User Root", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.OsCred"
+}

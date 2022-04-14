@@ -1,0 +1,58 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": true, 
+    "key": "deployandsetupmysql8028noinstallarchiveforwindows", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "downloadmysql8028noinstallziparchiveforwindows"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "deploythemysql8028noinstallziparchiveforwindows"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "cleanupdownloadedfilesformysql8028noinstallziparchiveforwindows"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "updatethesystemenvironmentpathvariableformysqlnoinstallarchiveonwindows"
+        }, 
+        {
+            "order": 400, 
+            "stepKey": "schedulearebootonawindowsmachine"
+        }, 
+        {
+            "order": 500, 
+            "stepKey": "waitforreboottocompleteonwindowsmachine"
+        }, 
+        {
+            "order": 550, 
+            "stepKey": "createmysqloptionsfile"
+        }, 
+        {
+            "order": 575, 
+            "stepKey": "createmysqldatadirectory"
+        }, 
+        {
+            "order": 600, 
+            "stepKey": "initializemysqlserveronwindows"
+        }, 
+        {
+            "order": 700, 
+            "stepKey": "createandstartmysqlwindowsservice"
+        }, 
+        {
+            "order": 800, 
+            "stepKey": "setmysqlrootpassword"
+        }, 
+        {
+            "order": 900, 
+            "stepKey": "populatedatabaseandtables"
+        }
+    ], 
+    "name": "Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

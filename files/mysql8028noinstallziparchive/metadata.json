@@ -1,0 +1,10 @@
+{
+    "fileName": "mysql-8.0.28-winx64.zip", 
+    "formatKey": "zip", 
+    "key": "mysql8028noinstallziparchive", 
+    "md5": "f1a0cfb0086256a56c81e1fe75e1338c", 
+    "name": "MySQL 8.0.28 noinstall ZIP Archive", 
+    "remoteUri": "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.28-winx64.zip", 
+    "size": 222021254, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

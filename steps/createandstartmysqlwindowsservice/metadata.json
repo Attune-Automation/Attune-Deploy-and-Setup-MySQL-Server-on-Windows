@@ -1,0 +1,14 @@
+{
+    "enabled": true, 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "createandstartmysqlwindowsservice", 
+    "name": "Create and Start MySQL Windows Service", 
+    "osCredKey": "windowsadministratoruser", 
+    "serverKey": "mysqlnode", 
+    "successExitCode": 0, 
+    "timeout": 60, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

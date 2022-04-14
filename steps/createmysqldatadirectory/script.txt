@@ -1,0 +1,12 @@
+# Script Variables
+$dataPath = "C:\mysql_data"
+
+# Create directory.
+if (Test-Path $dataPath)
+{
+    Write-Host "$dataPath directory exists"
+}
+else
+{
+    New-Item -Path $dataPath -ItemType Directory
+}

@@ -1,0 +1,21 @@
+# Script Variables
+$fileLocation = "c:\software\"
+$mysqlPath = "C:\mysql\"
+$zipFile = "mysql-8.0.28-winx64.zip"
+$extractDirectory = "mysql-8.0.28-winx64"
+$software = "MySQL Server"
+
+# Check if the software is already installed.
+$installed = (Test-Path $mysqlPath*)
+
+if($installed) {
+	Write-Host "'$software' is already deployed."
+} 
+else 
+{
+# deploy software.
+	Write-Host "Extract the '$software' files..."
+	Expand-Archive -Path $fileLocation$zipFile -DestinationPath $fileLocation
+	New-Item -ItemType "directory" -Path $mysqlPath
+	Move-Item -Path $fileLocation$extractDirectory\* -Destination $mysqlPath
+}

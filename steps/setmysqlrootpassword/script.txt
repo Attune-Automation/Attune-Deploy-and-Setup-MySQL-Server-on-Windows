@@ -1,0 +1,2 @@
+Write-Host "Setting the {mysqlUserRoot.user} user password..."
+mysql -u {mysqlUserRoot.user} -e "alter USER '{mysqlUserRoot.user}'@'localhost' IDENTIFIED BY '{mysqlUserRoot.password}'"

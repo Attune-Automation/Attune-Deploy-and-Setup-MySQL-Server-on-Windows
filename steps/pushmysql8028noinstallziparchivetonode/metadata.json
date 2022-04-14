@@ -1,0 +1,11 @@
+{
+    "archiveKey": "mysql8028noinstallziparchive", 
+    "deployPath": "/c$/software/", 
+    "enabled": true, 
+    "key": "pushmysql8028noinstallziparchivetonode", 
+    "name": "Push MySQL 8.0.28 noinstall ZIP Archive to Node", 
+    "osCredKey": "windowsadministratoruser", 
+    "serverKey": "mysqlnode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": false
+}

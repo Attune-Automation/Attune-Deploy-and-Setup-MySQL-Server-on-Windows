@@ -1,0 +1,20 @@
+# Script Variables
+$fileLocation = "c:\software\"
+$mysqlPath = "C:\mysql\"
+$zipFile = "mysql-8.0.28-winx64.zip"
+$extractDirectory = "mysql-8.0.28-winx64"
+$software = "MySQL Server"
+
+if (Test-Path $fileLocation$extractDirectory)
+{
+    Remove-Item $fileLocation$extractDirectory
+}
+if (Test-Path $fileLocation$zipFile)
+{
+    Remove-Item $fileLocation$zipFile
+	Write-Host "Cleaned up '$software' downloaded files."
+}
+else 
+{
+    Write-Host "'$software' downloaded files not found."
+}

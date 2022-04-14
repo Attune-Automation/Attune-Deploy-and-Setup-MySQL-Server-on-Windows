@@ -1,0 +1,24 @@
+# Script Variables
+$downloadLink = "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.28-winx64.zip"
+$fileLocation = "c:\software\"
+$mysqlPath = "C:\mysql\"
+$zipFile = "mysql-8.0.28-winx64.zip"
+$software = "MySQL Server"
+
+# Check if the software is already installed.
+$installed = (Test-Path $mysqlPath*)
+
+if($installed) {
+	Write-Host "'$software' is already deployed."
+} 
+else 
+{
+# Download the files
+    if (-not (Test-Path $fileLocation)) 
+    {
+        New-Item -ItemType "directory" -Path "$fileLocation"
+    }
+    Write-Host "Downloading the '$software' files..."
+    Invoke-WebRequest $downloadLink -OutFile $fileLocation$zipFile
+    Get-Item $fileLocation$zipFile
+}

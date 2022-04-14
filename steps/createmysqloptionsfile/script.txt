@@ -1,0 +1,21 @@
+# Script Variables
+$path = "C:\"
+$file = "my.ini"
+$contents = "
+    [mysqld]
+    # set basedir to your installation path
+    basedir=C:\\mysql
+    # set datadir to the location of your data directory
+    datadir=C:\\mysql_data
+    "
+
+# Create file.
+if (Test-Path $path$file)
+{
+    Write-Host "'$file' already exists."
+} else
+{
+    New-Item -Path $path -Name "$file" -ItemType "file" -Value $contents
+}
+
+Get-Content -Path $path$file

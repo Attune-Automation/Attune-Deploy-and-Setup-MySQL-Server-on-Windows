@@ -1,0 +1,22 @@
+# Script Variables
+$dataPath = "C:\mysql_data"
+    
+# Initialize MySQL.
+if (Test-Path $dataPath\*)
+{
+    Write-Host "MySQL already initialized."
+}
+else
+{
+    mysqld --console --initialize-insecure
+
+# Confirm initialization was successful.
+    if (Test-Path $dataPath\*)
+    {
+        Write-Host "MySQL initialization successful."
+    }
+    else
+    {
+        Write-Error "MySQL failed to initialize."
+    }
+}
