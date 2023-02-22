@@ -9,7 +9,8 @@
 
 # Attune-Deploy-and-Setup-MySQL-Server-on-Windows.git
 
-
+This is the complete deployment and setup of the noinstall ZIP archive MySQL 
+Server including.
 
 
 
@@ -98,6 +99,12 @@ This Project contains the following Blueprints.
 
 
 
+### Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows
+
+
+### Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows - OFFLINE
+
+
 
 
 
@@ -106,6 +113,9 @@ This Project contains the following Blueprints.
 
 | Name | Type | Script Reference | Comment |
 | ---- | ---- | ---------------- | ------- |
+| MySQL Node | Windows Node | `mysqlnode` | None |
+| MySQL User Root | Basic Credential | `mysqluserroot` | None |
+| Windows Administrator User | Windows Credential | `windowsadministratoruser` | None |
 
 
 
@@ -115,6 +125,7 @@ This Project contains the following Blueprints.
 
 | Name | Type | Comment |
 | ---- | ---- | ------- |
+| MySQL 8.0.28 noinstall ZIP Archive | Large Archives | https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.28-winx64.zip |
 
 
 
