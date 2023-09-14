@@ -7,7 +7,7 @@
 [![Docs](https://img.shields.io/badge/videos-watch-brightgreen.svg)](https://www.youtube.com/@servertribe)
 [![Generic badge](https://img.shields.io/badge/download-latest-brightgreen.svg)](https://www.servertribe.com/community-edition/)
 
-# Deploy and Setup MySQL Server on Windows Placeholder
+# Deploy and Setup MySQL Server on Windows
 
 This is the complete deployment and setup of the noinstall ZIP archive MySQL 
 Server including.

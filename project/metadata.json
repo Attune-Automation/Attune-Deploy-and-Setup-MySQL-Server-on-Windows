@@ -1,6 +1,6 @@
 {
     "externalUuid4": "9d851b60-6318-4d2b-b456-9adf5b3a02ae", 
-    "key": "deployandsetupmysqlserveronwindowsplaceholder", 
-    "name": "Deploy and Setup MySQL Server on Windows Placeholder", 
+    "key": "deployandsetupmysqlserveronwindows", 
+    "name": "Deploy and Setup MySQL Server on Windows", 
     "revision": "145c6dc54454"
 }
