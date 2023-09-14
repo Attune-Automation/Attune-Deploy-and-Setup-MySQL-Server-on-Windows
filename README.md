@@ -55,10 +55,11 @@ This Project contains the following Blueprints.
 
 
 
+### Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows - OFFLINE
+
+
 ### Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows
 
-
-### Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows - OFFLINE
 
 
 
