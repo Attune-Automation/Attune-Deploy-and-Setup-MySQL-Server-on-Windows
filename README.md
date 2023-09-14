@@ -43,52 +43,8 @@ You can learn more about Attune through
 
 # Clone this Project
 
-Clone this project into your own instance of Attune.
-
-<img src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-clone-new-project-01.png" alt="clone a new project"/>
-
----
-
-Paste the GIT repository URL into Attune and Select Clone.
-
-<img src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-clone-new-project-02.png" alt="clone a new project"/>
-
----
-
-**Now that this project is in your Attune instance you can begin creating
-Jobs.**
-
-Navigate to the Plan workspace and create a Job from a Blueprint in the
-Project you cloned.
-
-<img src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-plan-new-job-11.png" alt="plan a new job"/>
-
----
-
-Configure the Parameters for the Job you created. Create the Values you're
-missing in the next step.
-
-<img src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-plan-new-job-12.png" alt="plan a new job"/>
-
----
-
-Create the Values required to fill the Parameters for the Job.
-
-<img src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-plan-new-job-13-1.png" alt="plan a new job"/>
-
----
-
-Run your Job.
-
-<img src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-run-job-01.png" alt="run your job"/>
-
----
-
-**Congratulations, you’ve run a cloned project.**
-
-If you need further assistance, please explore our help.
-
-<img width=200 src="https://www.servertribe.com/wp-content/uploads/2023/02/Attune-get-help-01.png" alt="get help"/>
+To clone this project into your own instance of Attune, follow the
+[Clone a GIT Project How To Instructions](https://servertribe-attune.readthedocs.io/en/latest/howto/design_workspace/clone_project.html).
 
 
 
@@ -113,15 +69,14 @@ This Project contains the following Blueprints.
 
 | Name | Type | Script Reference | Comment |
 | ---- | ---- | ---------------- | ------- |
-| MySQL Node | Windows Node | `mysqlnode` | None |
-| MySQL User Root | Basic Credential | `mysqluserroot` | None |
-| Windows Administrator User | Windows Credential | `windowsadministratoruser` | None |
+| MySQL Node | Windows Node | `mysqlnode` |  |
+| MySQL User Root | Basic Credential | `mysqluserroot` |  |
+| Windows Administrator User | Windows Credential | `windowsadministratoruser` |  |
 
 
 
 
 ## Files
-
 
 | Name | Type | Comment |
 | ---- | ---- | ------- |

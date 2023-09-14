@@ -1,6 +1,8 @@
 {
+    "actionOnStepFail": null, 
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "7eef2184-9fb7-4d49-9803-c31b24d0d187", 
     "isBlueprint": true, 
     "key": "deployandsetupmysql8028noinstallarchiveforwindowsoffline", 
     "links": [

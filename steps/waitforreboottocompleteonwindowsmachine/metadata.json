@@ -1,5 +1,7 @@
 {
+    "actionOnStepFail": null, 
     "enabled": true, 
+    "externalUuid4": "e8968c68-39e6-4098-94ad-34a42c91d6b1", 
     "key": "waitforreboottocompleteonwindowsmachine", 
     "minDowntime": 1, 
     "name": "Wait for Reboot to Complete on Windows Machine", 

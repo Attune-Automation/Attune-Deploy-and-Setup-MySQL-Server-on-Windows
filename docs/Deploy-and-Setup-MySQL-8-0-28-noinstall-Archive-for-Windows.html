@@ -1,0 +1,1336 @@
+
+<!doctype html>
+<html lang="en">
+
+
+
+
+<head>
+    <title>How to Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows - Attune Automation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title"
+          content="How to Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows - Attune Automation">
+    <meta name="description"
+          content="">
+    <meta name="robots"
+          content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title"
+          content="HowTo Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows - Attune Automation" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Attune Automation" />
+    <meta property="article:section" content="IT Instruction" />
+
+    <meta name="twitter:title"
+          content="How to Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows - Attune Automation" />
+    <meta name="twitter:description" content="" />
+
+    <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-180x180.png">
+    <meta name="msapplication-TileImage" content="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-270x270.png">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-5TZQZNDJCD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-5TZQZNDJCD');
+    </script>
+</head>
+
+
+<body>
+
+<!-- Project NavBar -->
+
+<div class="bg-white border-bottom box-shadow sticky-top mb-3">
+<div class="container px-0">
+    <div class="row px-0">
+        <div class="col d-flex flex-column flex-lg-row align-items-center px-0
+            py-3">
+            <a class="navbar-brand my-0 mr-lg-auto"
+                  href="https://www.servertribe.com/"
+                  target="_blank">
+                    <img
+                        src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                        alt="Attune - Powered by ServerTribe"
+                        class="img-fluid navbar-img">
+            </a>
+            <nav class="my-2 my-lg-0 mr-lg-3">
+                <a class="p-2 text-dark" href="http://doc.servertribe.com/"
+                   target="_blank">
+                    Documentation
+                </a>
+                <a class="p-2 text-dark"
+                   href="https://discord.com/invite/3YpJsagqUn"
+                   target="_blank">
+                    Discord
+                </a>
+                <a class="p-2 text-dark" href="https://github.com/Attune-Automation"
+                   target="_blank">
+                    GitHub
+                </a>
+                <a class="p-2 text-dark" href="https://www.servertribe.com/learn/"
+                   target="_blank">
+                    Learn
+                </a>
+            </nav>
+            <a class="btn btn-outline-primary"
+               href="https://www.servertribe.com/download-attune-registration/"
+               target="_blank">
+                Download NOW!
+            </a>
+        </div>
+    </div>
+</div></div>
+
+<!-- Project breadcrumbs -->
+
+<!-- Project breadcrumbs -->
+<div class="container px-0">
+    <div class="row">
+        <nav class="col px-0" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">
+                    Attune-Deploy-and-Setup-MySQL-Server-on-Windows.git
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <strong>Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows</strong>
+                </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<!-- Blueprint Header -->
+
+<div class="container px-0">
+    <!-- Blueprint name and description -->
+    <div class="row">
+        <div class="col px-0">
+            <h1 class="text-left">
+                How to Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows
+            </h1>
+        </div>
+    </div>
+
+<!-- Blueprint Description -->
+    <div class="row pt-4">
+        <div class="col-6 px-0">
+            <h6 class="text-left">
+                This documentation is generated by
+                <a href="https://www.servertribe.com/"
+                    class="badge badge-primary"
+                    target="_blank">
+                    Attune
+                </a>
+            </h6>
+        </div>
+        <div class="col-6 align-self-end text-right px-0">
+            <h6 class="text-right">
+                <a href="https://www.youtube.com/@servertribe"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    YouTube
+                </a>
+                <a href="https://github.com/Attune-Automation"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    GitHub
+                </a>
+                <a href="https://discord.com/invite/3YpJsagqUn"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    Discord
+                </a>
+                <a href="https://www.linkedin.com/company/servertribe/"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    LinkedIn
+                </a>
+                <a href="http://doc.servertribe.com/"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    Documentation
+                </a>
+            </h6>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<div class="documentation">
+    <div class="container px-0">
+        <div class="row">
+
+<!-- Blueprint ToC -->
+
+
+            <div class="toc col-lg-2 px-0 pr-5">
+                <div class="container px-0 pt-3">
+                    <p class="pb-2">
+                        <strong>Contents</strong>
+                    </p>
+                    <p class="text-muted">
+                        <a href="#top">
+                            <strong>Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows</strong>
+                        </a>
+                    </p>
+
+
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#downloadmysql8028noinstallziparchiveforwindows">
+                            <strong>Step 1 -</strong> Download MySQL 8.0.28 noinstall ZIP Archive for Windows
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#deploythemysql8028noinstallziparchiveforwindows">
+                            <strong>Step 2 -</strong> Deploy the MySQL 8.0.28 noinstall ZIP Archive for Windows
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cleanupdownloadedfilesformysql8028noinstallziparchiveforwindows">
+                            <strong>Step 3 -</strong> Cleanup Downloaded Files for MySQL 8.0.28 noinstall ZIP Archive for Windows
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#updatethesystemenvironmentpathvariableformysqlnoinstallarchiveonwindows">
+                            <strong>Step 4 -</strong> Update the System Environment Path Variable for MySQL noinstall Archive on Windows
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#schedulearebootonawindowsmachine">
+                            <strong>Step 5 -</strong> Schedule a Reboot on a Windows Machine
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#waitforreboottocompleteonwindowsmachine">
+                            <strong>Step 6 -</strong> Wait for Reboot to Complete on Windows Machine
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#createmysqloptionsfile">
+                            <strong>Step 7 -</strong> Create MySQL Options File
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#createmysqldatadirectory">
+                            <strong>Step 8 -</strong> Create MySQL Data Directory
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#initializemysqlserveronwindows">
+                            <strong>Step 9 -</strong> Initialize MySQL Server on Windows
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#createandstartmysqlwindowsservice">
+                            <strong>Step 10 -</strong> Create and Start MySQL Windows Service
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#setmysqlrootpassword">
+                            <strong>Step 11 -</strong> Set MySQL root Password
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#populatedatabaseandtables">
+                            <strong>Step 12 -</strong> Populate Database and Tables
+                        </a>
+                    </p>
+
+
+                </div>
+            </div>
+
+<!-- Blueprint Contents -->
+            <div class="col-lg-8 pt-3">
+                <div class="container">
+
+
+        <div class="jumbotron">
+            <p class="display-3 text-center">
+                <strong>Automate This</strong>
+            </p>
+            <p class="lead text-center">
+                Use the <strong>Attune GUI</strong> for your Scripts
+            </p>
+            <p class="lead">
+                <ol>
+                    <a href="https://www.servertribe.com/download-attune-registration/"
+                        target="_blank">
+                        <span class="badge badge-primary">1</span>
+                        Download Attune
+                        <i class="fa-solid fa-download fa-beat-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://github.com/attune-Automation/"
+                        target="_blank">
+                        <span class="badge badge-primary">2</span>
+                         Copy the Attune Project URL
+                         <i class="fa-brands fa-github fa-fade"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://servertribe-attune.readthedocs.io/en/latest/howto/design_workspace/clone_project.html"
+                        target="_blank">
+                        <span class="badge badge-primary">3</span>
+                        Clone the Project in Attune
+                         <i class="fa-solid fa-book fa-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://www.youtube.com/watch?v=GCWDI29rDV0"
+                        target="_blank">
+                        <span class="badge badge-primary">4</span>
+                        Plan your Job(s)
+                        <i class="fa-brands fa-youtube fa-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://www.youtube.com/watch?v=b7DhFcURkZg"
+                        target="_blank">
+                        <span class="badge badge-primary">5</span>
+                        Run your Job(s)
+                        <i class="fa-brands fa-youtube fa-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+            </p>
+            <p class="lead text-center">
+                You've automated: <strong>Deploy and Setup MySQL 8.0.28 noinstall Archive for Windows</strong>
+            </p>
+            <hr class="my-4 text-center">
+            <div class="col px-0">
+                <p class="text-center">
+                    Get the most out of automation with our get started
+                    videos, product demonstrations, and more.
+                </p>
+                <p class="lead text-center">
+                    <a class="btn btn-primary btn-lg"
+                       href="https://www.servertribe.com/learn/"
+                       target="_blank"
+                       role="button">
+                        Learn Attune Automation
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>The following steps will guide you through the manual process.</p>
+        </div>
+
+<!-- Blueprint Steps -->
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="downloadmysql8028noinstallziparchiveforwindows">
+                            <a href="#downloadmysql8028noinstallziparchiveforwindows">
+                                <strong>Step 1 -</strong> Download MySQL 8.0.28 noinstall ZIP Archive for Windows
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via RDP:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+mstsc /admin /v:{mysqlnode}
+                            </code>
+                        </div>
+                        <div class="row">
+                            <p>
+                                Login as user {windowsadministratoruser} and open a
+                                command prompt.
+                            </p>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Script Variables
+$downloadLink = &quot;https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.28-winx64.zip&quot;
+$fileLocation = &quot;c:\software\&quot;
+$mysqlPath = &quot;C:\mysql\&quot;
+$zipFile = &quot;mysql-8.0.28-winx64.zip&quot;
+$software = &quot;MySQL Server&quot;
+
+# Check if the software is already installed.
+$installed = (Test-Path $mysqlPath*)
+
+if($installed) {
+	Write-Host &quot;&#x27;$software&#x27; is already deployed.&quot;
+} 
+else 
+{
+# Download the files
+    if (-not (Test-Path $fileLocation)) 
+    {
+        New-Item -ItemType &quot;directory&quot; -Path &quot;$fileLocation&quot;
+    }
+    Write-Host &quot;Downloading the &#x27;$software&#x27; files...&quot;
+    Invoke-WebRequest $downloadLink -OutFile $fileLocation$zipFile
+    Get-Item $fileLocation$zipFile
+}
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="deploythemysql8028noinstallziparchiveforwindows">
+                            <a href="#deploythemysql8028noinstallziparchiveforwindows">
+                                <strong>Step 2 -</strong> Deploy the MySQL 8.0.28 noinstall ZIP Archive for Windows
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Script Variables
+$fileLocation = &quot;c:\software\&quot;
+$mysqlPath = &quot;C:\mysql\&quot;
+$zipFile = &quot;mysql-8.0.28-winx64.zip&quot;
+$extractDirectory = &quot;mysql-8.0.28-winx64&quot;
+$software = &quot;MySQL Server&quot;
+
+# Check if the software is already installed.
+$installed = (Test-Path $mysqlPath*)
+
+if($installed) {
+	Write-Host &quot;&#x27;$software&#x27; is already deployed.&quot;
+} 
+else 
+{
+# deploy software.
+	Write-Host &quot;Extract the &#x27;$software&#x27; files...&quot;
+	Expand-Archive -Path $fileLocation$zipFile -DestinationPath $fileLocation
+	New-Item -ItemType &quot;directory&quot; -Path $mysqlPath
+	Move-Item -Path $fileLocation$extractDirectory\* -Destination $mysqlPath
+}
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="cleanupdownloadedfilesformysql8028noinstallziparchiveforwindows">
+                            <a href="#cleanupdownloadedfilesformysql8028noinstallziparchiveforwindows">
+                                <strong>Step 3 -</strong> Cleanup Downloaded Files for MySQL 8.0.28 noinstall ZIP Archive for Windows
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Script Variables
+$fileLocation = &quot;c:\software\&quot;
+$mysqlPath = &quot;C:\mysql\&quot;
+$zipFile = &quot;mysql-8.0.28-winx64.zip&quot;
+$extractDirectory = &quot;mysql-8.0.28-winx64&quot;
+$software = &quot;MySQL Server&quot;
+
+if (Test-Path $fileLocation$extractDirectory)
+{
+    Remove-Item $fileLocation$extractDirectory
+}
+if (Test-Path $fileLocation$zipFile)
+{
+    Remove-Item $fileLocation$zipFile
+	Write-Host &quot;Cleaned up &#x27;$software&#x27; downloaded files.&quot;
+}
+else 
+{
+    Write-Host &quot;&#x27;$software&#x27; downloaded files not found.&quot;
+}
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="updatethesystemenvironmentpathvariableformysqlnoinstallarchiveonwindows">
+                            <a href="#updatethesystemenvironmentpathvariableformysqlnoinstallarchiveonwindows">
+                                <strong>Step 4 -</strong> Update the System Environment Path Variable for MySQL noinstall Archive on Windows
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+$mysqlBinPath = &quot;C:\mysql\bin\&quot;
+$updatePathVariable = $true
+
+([System.Environment]::GetEnvironmentVariable(&quot;Path&quot;, &quot;Machine&quot;)).split(&#x27;;&#x27;) | foreach-object {
+    if ($_ -like &quot;*$mysqlBinPath*&quot;)
+    {
+        Write-Host &quot;System Environment Path Variable already includes: &quot; $_;
+        Write-Host &quot;System Environment Path Variable will not be updated.&quot;;
+        $updatePathVariable = $false
+        break
+    }
+    else
+    {
+        $newPath = $newPath + $_ + &#x27;;&#x27;
+    }
+}
+
+if ($updatePathVariable)
+{
+    $newPath = $newPath + $mysqlBinPath + &#x27;;&#x27;
+    [System.Environment]::SetEnvironmentVariable(&quot;Path&quot;, $newPath, &quot;Machine&quot;);
+    Write-Host &quot;System Environment Path Variable has been updated to include: &#x27;$mysqlBinPath&#x27;.&quot;
+}
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="schedulearebootonawindowsmachine">
+                            <a href="#schedulearebootonawindowsmachine">
+                                <strong>Step 5 -</strong> Schedule a Reboot on a Windows Machine
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+$WAIT = 10
+shutdown /r /t $WAIT /c &quot;Restart from Attune&quot;
+Write-Host &quot;Restarting in $WAIT seconds.&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="waitforreboottocompleteonwindowsmachine">
+                            <a href="#waitforreboottocompleteonwindowsmachine">
+                                <strong>Step 6 -</strong> Wait for Reboot to Complete on Windows Machine
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <div class="row">
+        <p class="mb-0">
+            Check if TCP Port <strong>0</strong> is listening.
+            Make sure the TCP Port goes down for
+            <strong>1</strong> seconds.
+            When the TCP Port is up, wait <strong>15</strong>
+            seconds.
+        </p>
+        <p>Use Telnet to check if the TCP Service is accepting connections.</p>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="createmysqloptionsfile">
+                            <a href="#createmysqloptionsfile">
+                                <strong>Step 7 -</strong> Create MySQL Options File
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via RDP:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+mstsc /admin /v:{mysqlnode}
+                            </code>
+                        </div>
+                        <div class="row">
+                            <p>
+                                Login as user {windowsadministratoruser} and open a
+                                command prompt.
+                            </p>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Script Variables
+$path = &quot;C:\&quot;
+$file = &quot;my.ini&quot;
+$contents = &quot;
+    [mysqld]
+    # set basedir to your installation path
+    basedir=C:\\mysql
+    # set datadir to the location of your data directory
+    datadir=C:\\mysql_data
+    &quot;
+
+# Create file.
+if (Test-Path $path$file)
+{
+    Write-Host &quot;&#x27;$file&#x27; already exists.&quot;
+} else
+{
+    New-Item -Path $path -Name &quot;$file&quot; -ItemType &quot;file&quot; -Value $contents
+}
+
+Get-Content -Path $path$file
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="createmysqldatadirectory">
+                            <a href="#createmysqldatadirectory">
+                                <strong>Step 8 -</strong> Create MySQL Data Directory
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Script Variables
+$dataPath = &quot;C:\mysql_data&quot;
+
+# Create directory.
+if (Test-Path $dataPath)
+{
+    Write-Host &quot;$dataPath directory exists&quot;
+}
+else
+{
+    New-Item -Path $dataPath -ItemType Directory
+}
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="initializemysqlserveronwindows">
+                            <a href="#initializemysqlserveronwindows">
+                                <strong>Step 9 -</strong> Initialize MySQL Server on Windows
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Script Variables
+$dataPath = &quot;C:\mysql_data&quot;
+    
+# Initialize MySQL.
+if (Test-Path $dataPath\*)
+{
+    Write-Host &quot;MySQL already initialized.&quot;
+}
+else
+{
+    mysqld --console --initialize-insecure
+
+# Confirm initialization was successful.
+    if (Test-Path $dataPath\*)
+    {
+        Write-Host &quot;MySQL initialization successful.&quot;
+    }
+    else
+    {
+        Write-Error &quot;MySQL failed to initialize.&quot;
+    }
+}
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="createandstartmysqlwindowsservice">
+                            <a href="#createandstartmysqlwindowsservice">
+                                <strong>Step 10 -</strong> Create and Start MySQL Windows Service
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+mysqld --install
+
+Start-Service -Name &quot;MySQL&quot;
+Get-Service -Name &quot;MySQL&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="setmysqlrootpassword">
+                            <a href="#setmysqlrootpassword">
+                                <strong>Step 11 -</strong> Set MySQL root Password
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+Write-Host &quot;Setting the {mysqlUserRoot.user} user password...&quot;
+mysql -u {mysqlUserRoot.user} -e &quot;alter USER &#x27;{mysqlUserRoot.user}&#x27;@&#x27;localhost&#x27; IDENTIFIED BY &#x27;{mysqlUserRoot.password}&#x27;&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="populatedatabaseandtables">
+                            <a href="#populatedatabaseandtables">
+                                <strong>Step 12 -</strong> Populate Database and Tables
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+Write-Host &quot;Show the existing MySL Databases.&quot;
+mysql -u {mysqlUserRoot.user} -p{mysqlUserRoot.password} -e &quot;SHOW DATABASES;&quot;
+
+Write-Host &quot;================================&quot;
+Write-Host &quot;Create the servertribe Database.&quot;
+mysql -u {mysqlUserRoot.user} -p{mysqlUserRoot.password} -e &quot;CREATE DATABASE servertribe;&quot;
+
+Write-Host &quot;================================&quot;
+Write-Host &quot;Create the solutions table in the servertribe database.&quot;
+mysql -u {mysqlUserRoot.user} -p{mysqlUserRoot.password} servertribe -e &quot;CREATE TABLE solutions (name VARCHAR(20), description TEXT);&quot;
+
+Write-Host &quot;================================&quot;
+Write-Host &quot;Populate the solutions table.&quot;
+mysql -u {mysqlUserRoot.user} -p{mysqlUserRoot.password} servertribe -e &quot;INSERT INTO solutions (name, description) VALUES (&#x27;Deployment&#x27;,&#x27;Attune is an agentless solution that connects to operating systems using the WinRM and ssh protocols.&#x27;);&quot;
+mysql -u {mysqlUserRoot.user} -p{mysqlUserRoot.password} servertribe -e &quot;SELECT * FROM solutions;&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+                    <div class="row pt-5">
+                        <div class="col">
+                            <h2>Completed</h2>
+                            <p>
+                                You have completed this instruction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Download Attune Ad -->
+
+            <div class="toc col-lg-2 px-0">
+                <div class="container px-0 pt-3 pl-5">
+                    <div class="card border-light mb-3" style="max-width: 18rem;">
+                        <div class="card-body attune-ad">
+                            <img
+                                src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                                alt="Attune - Powered by ServerTribe"
+                                class="img-fluid">
+                            <p class="card-title mt-3 text-center">
+                                <strong>Automate with Attune</strong>
+                            </p>
+                            <p class="card-text text-center">
+                                Download the Attune Community Edition.
+                            </p>
+                            <p class="text-center">
+                                <a href="https://www.servertribe.com/download-attune-registration/"
+                                   class="btn btn-primary mt-3">
+                                    DOWNLOAD!!!
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+<!-- Join Discord -->
+
+        <div class="row py-5">
+            <div class="jumbotron">
+              <h1 class="display-4 text-center">
+                  Discuss this Project in Discord
+              </h1>
+              <p class="lead">
+
+                  Join our Discord channel and connect with like-minded individuals who
+                  share your passion. Engage in lively discussions, gain valuable insights,
+                  and stay updated on the latest trends in our industry. Don't miss out on
+                  this opportunity to network, learn, and grow together.
+              </p>
+              <hr class="my-4 text-center">
+                <div class="col px-0">
+                  <p class="text-center">
+                      Click the link below and become a part of our vibrant community on
+                      Discord today!
+                  </p>
+                  <p class="lead text-center">
+                    <a class="btn btn-primary btn-lg"
+                       href="https://discord.com/invite/3YpJsagqUn"
+                       role="button">
+                        Join NOW!!!
+                    </a>
+                  </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Project Footer -->
+
+<footer class="footer fixed-bottom bg-white border-top box-shadow">
+      <div class="container px-0">
+          <div class="row">
+              <div class="col px-0">
+                  <a class="my-0 mr-lg-auto"
+                     href="https://www.servertribe.com/"
+                     target="_blank">
+                      <img
+                          src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                          alt="Attune - Powered by ServerTribe"
+                          class="img-fluid navbar-img">
+                  </a>
+              </div>
+          </div>
+      </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+</body>
+</html>

@@ -1,7 +1,9 @@
 {
+    "actionOnStepFail": null, 
     "archiveKey": "mysql8028noinstallziparchive", 
     "deployPath": "/c$/software/", 
     "enabled": true, 
+    "externalUuid4": "c1d9988c-4080-41d9-a3f2-381ed2c1c93c", 
     "key": "pushmysql8028noinstallziparchivetonode", 
     "name": "Push MySQL 8.0.28 noinstall ZIP Archive to Node", 
     "osCredKey": "windowsadministratoruser", 
